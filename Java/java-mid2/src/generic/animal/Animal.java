@@ -13,8 +13,8 @@ public class Animal {
         return name;
     }
 
-    public Animal(int size) {
-        this.size = size;
+    public int getSize() {
+        return size;
     }
 
     public void sound() {
