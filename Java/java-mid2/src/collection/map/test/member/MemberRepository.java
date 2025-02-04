@@ -1,6 +1,7 @@
 package collection.map.test.member;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class MemberRepository {
     private Map<String, Member> memberMap = new HashMap<>();
