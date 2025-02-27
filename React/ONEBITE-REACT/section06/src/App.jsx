@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Controller from "./components/Controller";
-import Viewer from "./components/Viewer";
+import Controller from "./compon/Controller";
+import Viewer from "./compon/Viewer";
 
 function App() {
   const [count, setCount] = useState(0);
