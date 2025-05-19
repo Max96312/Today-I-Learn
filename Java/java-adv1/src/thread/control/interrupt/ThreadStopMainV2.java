@@ -17,8 +17,6 @@ public class ThreadStopMainV2 {
 
     static class MyTask implements Runnable {
 
-        volatile boolean runFlag = true;
-
         @Override
         public void run() {
             try{
