@@ -15,9 +15,9 @@ public class ResetCloseClient {
         InputStream input = socket.getInputStream();
         OutputStream output = socket.getOutputStream();
 
-        input.close();
-        output.close();
-        socket.close();
+        // input.close();
+        // output.close();
+        // socket.close();
 
         // client <- server: FIN
         Thread.sleep(1000); // 서버가 close() 호출할 때 까지 잠시 대기

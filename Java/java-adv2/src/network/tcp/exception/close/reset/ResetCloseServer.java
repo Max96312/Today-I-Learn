@@ -12,7 +12,7 @@ public class ResetCloseServer {
         Socket socket = serverSocket.accept();
         log("소켓 연결: " + socket);
 
-        Thread.sleep(1000);
+        // Thread.sleep(1000);
 
         socket.close();
         serverSocket.close();
