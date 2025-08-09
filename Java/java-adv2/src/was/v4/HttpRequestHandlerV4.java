@@ -70,7 +70,6 @@ public class HttpRequestHandlerV4 implements Runnable{
         response.writeBody("<li><a href='/site2'>site2</a></li>");
         response.writeBody("<li><a href='/search?q=hello'>검색</a></li>");
         response.writeBody("</ul>");
-
     }
 
     private void site1(HttpResponse response) {
