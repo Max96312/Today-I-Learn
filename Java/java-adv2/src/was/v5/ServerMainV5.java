@@ -1,6 +1,7 @@
 package was.v5;
 
 import was.httpserver.HttpResponse;
+import was.httpserver.HttpServer;
 import was.httpserver.ServletManager;
 import was.httpserver.servlet.DiscardServlet;
 import was.v5.servlet.HomeServlet;
@@ -21,7 +22,7 @@ public class ServerMainV5 {
         servletManager.add("/search", new SearchServlet());
         servletManager.add("/favicon.ico", new DiscardServlet());
 
-        HttpResponse.HttpServer server = new HttpResponse.HttpServer(PORT, servletManager);
+        HttpServer server = new HttpServer(PORT, servletManager);
         server.start();
     }
 }
