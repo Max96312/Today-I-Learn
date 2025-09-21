@@ -45,7 +45,7 @@ function summarizeCart(cart) {
 
 function summarizeCartUpdated(cart) {
   const cartWithReward = addFreeGift(cart);
-  const discountable = ccart.filter(item => item.discount);
+  const discountable = cart.filter(item => item.discount);
   if (discountable.length > 1) {
     return {
       error: '할인 상품은 하나만 주문할 수 있습니다.',
